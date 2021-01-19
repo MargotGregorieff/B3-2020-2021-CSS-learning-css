@@ -1,0 +1,32 @@
+h1 {
+    color: red;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+p {
+    line-height: 20px;
+    margin: 0px;
+    padding: 5px;
+    color: #333;
+}
+
+
+/*column*/
+
+section {
+    column-count: 3;
+    column-width: 10em;
+}
+
+
+/*flexbox*/
+
+
+/*section {
+    display: flex;
+    flex-wrap: wrap;
+}*/
