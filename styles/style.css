@@ -6,8 +6,11 @@ body {
     font-family: Helvetica, sans-serif;
     font-weight: 200;
     background-color: #0A0A0A !important;
-    /*font-family: 'Ubuntu', Arial, sans-serif;*/
-    font-family: epilogue, sans-serif;
+    font-family: sans-serif;
+}
+
+section {
+    padding: 1% 0% 5% 0%;
 }
 
 h1 {
@@ -19,12 +22,31 @@ h1 {
     font-weight: 500;
 }
 
+.primary_p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 95;
+    width: 45%;
+    margin: 0% 20% 2% 20%;
+    padding: 0;
+}
+
+.secondary-section {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    justify-content: center;
+    width: 100%;
+    background: #0A0A0A;
+}
+
 h2 {
     margin: 15px 10px 15px 10px;
     color: white;
     font-size: 2rem;
     margin: 1rem 0rem 1rem 0rem;
-    font-family: source code pro, monospace;
+    font-family: monospace;
     line-height: 1;
     font-weight: 300;
     text-transform: uppercase;
@@ -35,53 +57,96 @@ p {
     font-size: 18px;
     margin: 0%;
     line-height: 1.8;
-    font-weight: 95;
-    /*font-family: Basis, Hiragino Kaku Gothic ProN, ヒラギノ角ゴ ProN W3, Meiryo, メイリオ, sans-serif;*/
-}
-
-.primary_p {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 2;
-    font-weight: 95;
-    width: 45%;
-    margin: 0% 20% 2% 20%;
-}
-
-section {
-    padding: 1% 0% 5% 0%;
-}
-
-.secondary-section {
-    background: #111;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 1%;
-}
-
-.secondary-section p {
-    color: #FFFFFF99;
-    font-size: 16px;
-    margin: 0%;
-    width: auto;
+    font-weight: 18px;
+    padding: 2%;
 }
 
 article {
-    border: white;
-    border-width: 3px;
-    border-radius: 30px;
+    background-color: #111;
     padding: 3% 5% 3% 5%;
-    width: 30%;
+    width: 35%;
+    margin: 2%;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.compartiment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.trait {
+    background-color: #fff;
+    height: 1px;
+    width: 5%;
     margin: 2%;
 }
 
+article ul li {
+    list-style-type: circle;
+    padding: 1vw;
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: #FFFFFF99;
+    font-size: 18px;
+    margin: 0%;
+    font-weight: 95;
+}
 
-/*///////CTA///////*/
 
-a.cta-homepage:link,
-a.cta-homepage:visited {
+/*/////////// Mentions Légales ///////////*/
+
+.myself {
+    width: 80%;
+    height: auto;
+}
+
+
+/*////////////// Sara Soueidan //////////////*/
+
+.interview {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+    font-weight: 18px;
+    padding: 2%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.interview:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    transition: all 0.75s ease 0s;
+}
+
+.interview:hover {
+    color: rgb(0, 191, 255);
+    text-shadow: none;
+    letter-spacing: 2px;
+    transition: 0.75s;
+}
+
+
+/*///////////// CTA ///////////*/
+
+a.cta:link,
+a.cta:visited {
     position: relative;
     display: block;
     margin: 20px auto 0;
@@ -95,8 +160,8 @@ a.cta-homepage:visited {
     transition: all 0.5s ease;
 }
 
-a.cta-homepage:link:after,
-a.cta-homepage:visited:after {
+a.cta:link:after,
+a.cta:visited:after {
     content: "";
     position: absolute;
     height: 0%;
@@ -107,27 +172,15 @@ a.cta-homepage:visited:after {
     transition: all 0.75s ease 0s;
 }
 
-a.cta-homepage:link:hover,
-a.cta-homepage:visited:hover {
-    color: rgb(210, 64, 24);
+a.cta:link:hover,
+a.cta:visited:hover {
+    color: rgb(0, 191, 255);
     text-shadow: none;
     letter-spacing: 2px;
 }
 
 
-/*/////// liste à puces mentions légales //////*/
-
-article ul li {
-    list-style-type: circle;
-    padding: 1vw;
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-
-/*////// menu principal //////*/
+/*/////////// Menu principal ///////////*/
 
 nav {
     background: black;
@@ -146,11 +199,11 @@ nav ul li.btn {
 
 nav ul li.btn a {
     text-decoration: none;
-    color: #C0C0C0;
+    color: white;
 }
 
 nav ul li.btn a:hover {
-    color: white;
+    color: rgb(0, 191, 255);
     transition: .8s;
 }
 
@@ -165,7 +218,7 @@ nav ul li.btn a:after {
 
 nav ul li.btn a:hover:after {
     width: 100%;
-    background: white;
+    background: rgb(0, 191, 255);
 }
 
 nav ul li.btn-on {
@@ -175,9 +228,12 @@ nav ul li.btn-on {
 }
 
 nav ul li.btn-on a {
-    color: white;
+    color: rgb(0, 191, 255);
     text-decoration: none;
 }
+
+
+/*///////////// Footer //////////////*/
 
 footer {
     background: black;
@@ -198,16 +254,7 @@ footer p {
 }
 
 
-/* ///////////////Evolution CSS///////////// */
-
-.secondary-section-css {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    background: #0A0A0A;
-}
+/* /////////////// Evolution CSS ///////////// */
 
 .circle {
     border-radius: 20px;
@@ -389,20 +436,21 @@ footer p {
 }
 
 
-/*/////////////Famous People//////////////*/
+/*///////////// Famous People //////////////*/
 
 aside {
-    margin: 4% 1% 1% 1%;
-}
-
-aside>h2 {
-    margin-left: 7%;
+    background-color: #111;
+    margin: 6% 1% 1% 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .bg-revue {
     width: 370px;
     height: 470px;
-    margin: 30px;
+    margin: 15px;
     background-color: white;
     cursor: pointer;
     display: flex;
@@ -438,6 +486,7 @@ aside>h2 {
 .details p {
     width: 80%;
     color: white;
+    text-align: ;
 }
 
 .revue:hover .details {
