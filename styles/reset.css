@@ -137,7 +137,8 @@ table {
 
 img {
     display: block;
-    margin: 30px;
-    width: 310px;
+    margin: 20px;
+    padding: 1.5%;
+    width: 600px;
     height: auto;
 }

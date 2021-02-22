@@ -3,8 +3,9 @@ h1 {
 }
 
 h2 {
-    margin: 15px 10px 20px 0px;
+    margin: 5% 0% 5% 2%;
     font-size: 42px;
+    text-align: left;
 }
 
 main {
@@ -24,6 +25,14 @@ main {
     font-weight: 400;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+svg {
+    display: flex;
+    fill: rgb(246, 194, 40);
+    width: 100px;
+    height: 100px;
+    margin: auto;
 }
 
 article {
