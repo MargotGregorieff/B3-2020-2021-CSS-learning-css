@@ -27,15 +27,34 @@ main {
     -webkit-background-clip: text;
 }
 
-svg {
-    display: flex;
+path {
     fill: rgb(246, 194, 40);
     width: 100px;
     height: 100px;
+}
+
+svg {
     margin: auto;
+    padding: auto;
 }
 
 article {
     padding: 3%;
-    margin: 2%;
+    margin: 2.5%;
+}
+
+@media (min-width: 640px) and (max-width: 1280px) {
+    .gif {
+        font-size: 110px;
+        font-weight: 350;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gif {
+        font-size: 100px;
+        font-weight: 300;
+        margin-left: 12%;
+    }
 }
